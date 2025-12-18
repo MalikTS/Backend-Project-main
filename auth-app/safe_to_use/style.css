@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: none;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-container button:hover {
+    background: #45a049;
+  }
+  
+  .form-container p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .form-container a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .form-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Показать нужную форму */
+  .show-sign-up .sign-up { display: block; }
+  .show-sign-in .sign-in { display: block; }
