@@ -15,7 +15,7 @@ class ProductController {
                     path += element.path + ","
                 });
                 path = path.substring(0, path.lastIndexOf(","))
-                product.images = path
+                product.img = path;
 
             }
 
@@ -107,6 +107,7 @@ class ProductController {
     }
 
 }
+
 
 
 module.exports = new ProductController();
