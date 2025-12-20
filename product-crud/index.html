@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Управление товарами</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Товары</h1>
+
+    <!-- Форма добавления/редактирования -->
+    <form id="productForm" class="card">
+      <h2 id="formTitle">Добавить товар</h2>
+      <input type="hidden" id="productId" />
+      <input type="text"     id="title"     placeholder="Название" required />
+      <textarea          id="description" placeholder="Описание" required></textarea>
+      <input type="number"   id="price"     placeholder="Цена" step="0.01" required />
+      <input type="file"     id="img"       multiple accept="image/*" />
+      <div class="form-buttons">
+        <button type="submit" id="saveBtn">Сохранить</button>
+        <button type="button" id="cancelBtn" style="display: none;">Отмена</button>
+      </div>
+    </form>
+
+    <!-- Список товаров -->
+    <div id="productsList" class="products-grid">
+      <!-- Товары будут подгружаться сюда -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
