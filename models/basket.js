@@ -1,5 +1,5 @@
 const { Schema, model, default: mongoose } = require("mongoose");
-const Product = require("./Product");
+
 
 const Basket = new mongoose.Schema({
   ProductID: {

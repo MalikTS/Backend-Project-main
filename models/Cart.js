@@ -1,5 +1,5 @@
 const { Schema, model, default: mongoose } = require("mongoose");
-const Product = require("./Product");
+
 
 const Cart = new mongoose.Schema({
   user: {
@@ -11,7 +11,7 @@ const Cart = new mongoose.Schema({
   products: [
     {
       product: {
-        typeof: mongoose.Schema.Types.ProductID,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "Product",
         require: true,
       },
